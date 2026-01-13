@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>News Summary - Browser</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="description" content="Browse commits to news-summary." />
+    <meta name="theme-color" content="#000" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@isomorphic-git/lightning-fs": "https://unpkg.com/@isomorphic-git/lightning-fs@4.6.2/dist/lightning-fs.min.js",
+          "buffer": "https://cdn.jsdelivr.net/npm/buffer@6.0.3/+esm",
+          "isomorphic-git": "https://unpkg.com/isomorphic-git@1.36.1/index.umd.min.js",
+          "isomorphic-git/http/web": "https://unpkg.com/isomorphic-git@1.36.1/http/web/index.js"
+        }
+      }
+    </script>
+    <script type="module" src="./app.mjs"></script>
+    <style>
+      a {
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="page__header">
+        <h1 class="page__title">
+          <a href="https://kherrick.github.io/news-summary-browser/"
+            >News Summary - Browser</a
+          >
+        </h1>
+      </header>
+
+      <news-summary-browser
+        branch="main"
+        fetch-step="10"
+        fetch-threshold="2"
+        initial-depth="10"
+        repo-url="https://github.com/kherrick/news-summary"
+      >
+        <template shadowrootmode="open">
+          <style>
+            .news-browser__controls {
+              display: none;
+            }
+
+            .loading {
+              animation: blink 1.5s infinite;
+              animation-fill-mode: both;
+              margin-left: 1rem;
+            }
+
+            @keyframes blink {
+              0% {
+                opacity: 0;
+              }
+              50% {
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+          </style>
+          <div class="news-browser__controls">
+            <button class="news-browser__button" id="backBtn" disabled>
+              ⬅ Back (Older)
+            </button>
+            <button class="news-browser__button" id="nextBtn" disabled>
+              Next (Newer) ➡
+            </button>
+            <span class="news-browser__info" id="commitInfo"></span>
+            <span class="news-browser__status" id="status"></span>
+          </div>
+          <div class="news-browser__content" id="content">
+            <h2 class="loading">Loading...</h2>
+          </div>
+        </template>
+      </news-summary-browser>
+    </main>
+  </body>
+</html>

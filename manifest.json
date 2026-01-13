@@ -1,0 +1,40 @@
+{
+  "background_color": "#000000",
+  "description": "Browse commits to news-summary.",
+  "display": "standalone",
+  "id": "news-summary-browser",
+  "name": "news-summary-browser",
+  "short_name": "news-summary-browser",
+  "start_url": "https://kherrick.github.io/news-summary-browser/",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEUAAACnej3aAAAANklEQVR42u3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8G4IAAAFjdVCkAAAAAElFTkSuQmCC",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEUAAACnej3aAAAANklEQVR42u3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8G4IAAAFjdVCkAAAAAElFTkSuQmCC",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "form_factor": "wide",
+      "label": "news-summary-browser",
+      "sizes": "1280x720",
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQAQMAAAD1s08VAAAAA1BMVEUAAACnej3aAAAAh0lEQVR42u3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4GsTfAAGc95RKAAAAAElFTkSuQmCC",
+      "type": "image/webp"
+    },
+    {
+      "form_factor": "narrow",
+      "label": "news-summary-browser",
+      "sizes": "720x1280",
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAAUAAQMAAABUAPd+AAAAA1BMVEUAAACnej3aAAAAiElEQVR42u3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAlwHHDwABi4bK8wAAAABJRU5ErkJggg==",
+      "type": "image/webp"
+    }
+  ]
+}

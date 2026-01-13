@@ -1,0 +1,17 @@
+{
+  "name": "news-summary-browser",
+  "version": "1.0.0",
+  "description": "Browse commits to news-summary.",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "main": "news-summary-node.mjs",
+  "scripts": {
+    "format": "prettier index.html -w",
+    "start": "npx serve",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "serve": "^14.2.5"
+  }
+}
